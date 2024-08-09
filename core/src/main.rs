@@ -5,21 +5,27 @@ use rand::prelude::*;
 //パネルB (mb)kg,(Sb)m2
 //...
 
-//トラックA (Ea)km/L or km/kWh, max(Ma)kg (陸拠点)
-//トラックB (Eb)km/L or km/kWh, max(Mb)kg (陸拠点)
+//トラックA (Ea)km/L or km/kWh, max(Ma)kg (陸拠点), 速度v(km/h)
+//トラックB (Eb)km/L or km/kWh, max(Mb)kg (陸拠点), 速度v(km/h)
 //...
 
-//船A (Ea)km/L or km/kWh, max(Ma)kg
-//船B (Eb)km/L or km/kWh, max(Mb)kg
+//船A (Ea)km/L or km/kWh, max(Ma)kg, 速度v(km/h)
+//船B (Eb)km/L or km/kWh, max(Mb)kg, 速度v(km/h)
 //...
 
-//バッテリーA (Ba)Ah, (Bma)kg
-//バッテリーB (Bb)Ah, (Bmb)kg
+//鉄道A km/kWh, max(Ma)kg, 速度v(km/h)
+//鉄道B km/kWh, max(Mb)kg, 速度v(km/h)
+//...
+
+//バッテリーA (Ba)Ah, (Bma)kg, 自己放電率(%)
+//バッテリーB (Bb)Ah, (Bmb)kg, 自己放電率(%)
 //...
 
 //拠点A 充電電流(C-BAa)A, 予想消費電力W, スペース（バッテリー Sm2 x n層、パネル Sm2、船舶 Sm2、トラック Sm2）
 //拠点B 充電電流(C-BAb)B, 予想消費電力W, スペース（バッテリー Sm2 x n層、パネル Sm2、船舶 Sm2、トラック Sm2）
 //...
+
+//拠点間距離AB(Rab)km
 
 //計算単位 1週間ごとの配置、天気予報（日照時間）、日照時間（角度）
 // https://ssl4.eir-parts.net/doc/4418/tdnet/2332520/00.pdf
