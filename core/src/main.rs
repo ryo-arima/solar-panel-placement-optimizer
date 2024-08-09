@@ -20,6 +20,7 @@ use rand::prelude::*;
 //バッテリーA (Ba)Ah, (Bma)kg, 自己放電率(%)
 //バッテリーB (Bb)Ah, (Bmb)kg, 自己放電率(%)
 //...
+//https://www.i.u-tokyo.ac.jp/news/press/2023/202312142339.shtml
 
 //拠点A 充電電流(C-BAa)A, 予想消費電力W, スペース（バッテリー Sm2 x n層、パネル Sm2、船舶 Sm2、トラック Sm2）
 //拠点B 充電電流(C-BAb)B, 予想消費電力W, スペース（バッテリー Sm2 x n層、パネル Sm2、船舶 Sm2、トラック Sm2）
